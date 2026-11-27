@@ -19,7 +19,7 @@ import ai.antigem.i18n.L
  * doesn't match is refused before the install screen. The packages themselves are installed like any other .agapp.
  */
 object MiniAppStore {
-    const val REPO = "Santoshkurmi/antigem_mini_apps"
+    const val REPO = "1227akash/antigem_mini_apps"
     const val INDEX = "antigem-mini-apps.json"
     /** HEAD = the repository's default branch, whatever it is called. */
     const val CATALOG = "https://raw.githubusercontent.com/$REPO/HEAD/$INDEX"

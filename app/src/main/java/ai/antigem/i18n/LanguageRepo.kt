@@ -24,7 +24,7 @@ import java.util.concurrent.TimeUnit
  * index tells whether an update is waiting. Nothing is fetched until the Language page (or a tool) asks for the list.
  */
 object LanguageRepo {
-    const val REPO = "Santoshkurmi/antigem_languages"
+    const val REPO = "1227akash/antigem_languages"
     const val PAGE = "https://github.com/$REPO"
     const val CONTRIBUTING = "$PAGE/blob/HEAD/CONTRIBUTING.md"
     const val SHARE_FORM = "$PAGE/issues/new?template=share-translation.yml"

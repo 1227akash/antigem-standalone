@@ -287,7 +287,7 @@ recognizer for the rest of the session.
   which matters in languages like Hindi ("main kar **rahi** hoon" / "main kar **raha** hoon"). Pick a matching voice under
   Voice output.
 - **About you and extra instructions:** anything Jarvis should always know, for example
-  *"Call me Santosh. Reply in Hinglish. I mostly work on the antigem project."*
+  *"Call me 1227akash. Reply in Hinglish. I mostly work on the antigem project."*
 
 Both are sent with the first message of every Jarvis chat. When you change them, the open chat is told with your next
 message.

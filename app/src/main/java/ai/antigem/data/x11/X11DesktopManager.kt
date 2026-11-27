@@ -39,7 +39,7 @@ import ai.antigem.i18n.L
  * Settings → X11 Desktop: sets up Termux:X11 (the app that shows the desktop, its companion
  * termux package with the `termux-x11` command, and a desktop such as XFCE) and starts/stops it.
  *
- * It uses AntiGem's own Termux:X11 build (github.com/Santoshkurmi/termux-x11), package ai.antigem.x11, signed
+ * It uses AntiGem's own Termux:X11 build (github.com/1227akash/termux-x11), package ai.antigem.x11, signed
  * with AntiGem's key. That app joins AntiGem's UID (sharedUserId ai.antigem) and process, so Android keeps the
  * desktop at full speed while it is on screen. Its companion package is antigem-termux-x11 from the same
  * release; the official termux-x11-nightly's loader only starts the official Termux:X11, so it is replaced when
@@ -60,7 +60,7 @@ object X11DesktopManager {
     const val COMPANION_ANTIGEM = "antigem-termux-x11"
     const val COMPANION_OFFICIAL = "termux-x11-nightly"
 
-    private const val FORK_REPO = "Santoshkurmi/termux-x11"
+    private const val FORK_REPO = "1227akash/termux-x11"
     const val FORK_RELEASES_PAGE = "https://github.com/$FORK_REPO/releases/latest"
     private const val FORK_APK_URL = "https://github.com/$FORK_REPO/releases/latest/download/antigem-termux-x11-sharedUid.apk"
     private const val FORK_RELEASE_API = "https://api.github.com/repos/$FORK_REPO/releases/latest"
