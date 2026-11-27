@@ -334,6 +334,6 @@ internal class PetLines(private val kind: PetKind, private val petName: String, 
     fun bye(): String = L.components.floatingMascot.byeBye
 
     companion object {
-        val EMPTY get() = PetLines(PetKind.GEMMY, "Gemmy")
+        val EMPTY get() = PetLines(PetKind.GEMMY, "Laddu")
     }
 }
