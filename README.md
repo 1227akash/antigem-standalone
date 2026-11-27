@@ -305,14 +305,14 @@ AntiGem has the common Termux:API commands built in. It installs Termux's `termu
 
 For advanced hardware APIs (such as `termux-location`, `termux-camera-photo`, `termux-sensor`, `termux-sms-*`, `termux-wifi-*`), install the matching signed companion app:
 
-👉 **[Download AntiGem Termux:API Companion App](https://github.com/Santoshkurmi/termux-api/releases)**
+👉 **[Download AntiGem Termux:API Companion App](https://github.com/1227akash/termux-api/releases)**
 
 > [!IMPORTANT]
 > The companion app must be AntiGem's build for `ai.antigem`: it shares AntiGem's Linux user (`sharedUserId ai.antigem`) to talk to it over UNIX sockets. Companion apps made for the old `com.termux` build, or the official Termux:API, don't work with it.
 >
-> **Moving from the old `com.termux` app?** Download the Termux:API companion again from the [releases page](https://github.com/Santoshkurmi/termux-api/releases) and install it for `ai.antigem`. Don't keep using the companion you installed for the old app: it only works with the old app.
+> **Moving from the old `com.termux` app?** Download the Termux:API companion again from the [releases page](https://github.com/1227akash/termux-api/releases) and install it for `ai.antigem`. Don't keep using the companion you installed for the old app: it only works with the old app.
 
-**How to enable:** install the companion APK from the [releases page](https://github.com/Santoshkurmi/termux-api/releases), then choose **AntiGem's Termux:API app** in **Settings → Termux Support → Termux:API**. One handler is used at a time: *Built-in* (the default) or the app, which then handles every `termux-*` command. AntiGem's dispatcher and the package's own binary sit side by side (`dpkg-divert`), so switching needs no reinstall, and installing or updating `termux-api` never breaks either of them.
+**How to enable:** install the companion APK from the [releases page](https://github.com/1227akash/termux-api/releases), then choose **AntiGem's Termux:API app** in **Settings → Termux Support → Termux:API**. One handler is used at a time: *Built-in* (the default) or the app, which then handles every `termux-*` command. AntiGem's dispatcher and the package's own binary sit side by side (`dpkg-divert`), so switching needs no reinstall, and installing or updating `termux-api` never breaks either of them.
 
 #### X11 desktop
 
@@ -320,7 +320,7 @@ AntiGem can run a Linux desktop (XFCE or LXQt) with [Termux:X11](https://github.
 
 Go to **Settings → Termux Support → X11 Desktop** and follow the steps: install the Termux:X11 app, the `termux-x11` command and a desktop, then tap **Start**.
 
-To set it up by hand instead, get `antigem-termux-x11-sharedUid.apk` and `antigem-termux-x11-*-all.deb` from the [AntiGem Termux:X11 releases](https://github.com/Santoshkurmi/termux-x11/releases/latest), install the APK, and run:
+To set it up by hand instead, get `antigem-termux-x11-sharedUid.apk` and `antigem-termux-x11-*-all.deb` from the [AntiGem Termux:X11 releases](https://github.com/1227akash/termux-x11/releases/latest), install the APK, and run:
 
 ```bash
 pkg install x11-repo
@@ -332,7 +332,7 @@ termux-x11 :0 -xstartup "dbus-launch --exit-with-session xfce4-session"
 Then open Termux:X11. Don't install `termux-x11-nightly` from x11-repo: it only works with the official Termux:X11 app.
 
 > [!IMPORTANT]
-> **Moving from the old `com.termux` app?** Download AntiGem's Termux:X11 app and `.deb` again from the [AntiGem Termux:X11 releases](https://github.com/Santoshkurmi/termux-x11/releases/latest) and install them for `ai.antigem`. Don't keep using the Termux:X11 app you installed for the old app: it only works with the old app.
+> **Moving from the old `com.termux` app?** Download AntiGem's Termux:X11 app and `.deb` again from the [AntiGem Termux:X11 releases](https://github.com/1227akash/termux-x11/releases/latest) and install them for `ai.antigem`. Don't keep using the Termux:X11 app you installed for the old app: it only works with the old app.
 
 ---
 
@@ -469,10 +469,10 @@ AntiGem comes in parts that link to each other:
 | Project | What it is | Repository |
 |---|---|---|
 | **AntiGem** (Android app) | The coding agents, a Linux terminal, an editor and a browser on your phone. With **Connect to PC** it also uses the agents of a PC that runs AntiGem for VS Code. | [1227akash/antigem-standalone](https://github.com/1227akash/antigem-standalone) |
-| **AntiGem for VS Code** | The same agents and chat in a VS Code sidebar. Its **Connect phone** lets the app on your phone use them. | [Santoshkurmi/antigem_vscode_extension](https://github.com/1227akash/antigem-standalone_vscode_extension) · install: [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=santoshkurmi.antigem-vscode-extension), [Open VSX](https://open-vsx.org/extension/1227akash/antigem-standalone-vscode-extension) |
+| **AntiGem for VS Code** | The same agents and chat in a VS Code sidebar. Its **Connect phone** lets the app on your phone use them. | [1227akash/antigem_vscode_extension](https://github.com/1227akash/antigem-standalone_vscode_extension) · install: [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=santoshkurmi.antigem-vscode-extension), [Open VSX](https://open-vsx.org/extension/1227akash/antigem-standalone-vscode-extension) |
 | **AntiGem Browser Bridge** (Chrome extension) | Lets agents in AntiGem for VS Code use your real Chrome. Not needed by the Android app, which has its own browser. | [1227akash/antigem-standalone-browser-extension](https://github.com/1227akash/antigem-standalone-browser-extension) · not in the Chrome Web Store yet: installed with *Load unpacked* from AntiGem for VS Code |
-| **AntiGem Languages** | The app's translations, made by the people who use it and downloaded from **Settings → Language → Get more languages** (the app ships only English). Also the step-by-step guide to adding or improving a language, the file format and the check every translation passes. | [Santoshkurmi/antigem_languages](https://github.com/1227akash/antigem-standalone_languages) |
-| **AntiGem mini apps** | The official mini apps (Habits, Pocket Notes, Sky, Gallery, Focus, Dev Toolbox, Explorer, Showcase), installed from **Mini Apps → Get apps**. Also the guide to building and publishing your own: real app sources using every SDK feature, signed `.agapp` packages, the catalog format and the `agapp.mjs publish` tool. | [Santoshkurmi/antigem_mini_apps](https://github.com/1227akash/antigem-standalone_mini_apps) |
+| **AntiGem Languages** | The app's translations, made by the people who use it and downloaded from **Settings → Language → Get more languages** (the app ships only English). Also the step-by-step guide to adding or improving a language, the file format and the check every translation passes. | [1227akash/antigem_languages](https://github.com/1227akash/antigem-standalone_languages) |
+| **AntiGem mini apps** | The official mini apps (Habits, Pocket Notes, Sky, Gallery, Focus, Dev Toolbox, Explorer, Showcase), installed from **Mini Apps → Get apps**. Also the guide to building and publishing your own: real app sources using every SDK feature, signed `.agapp` packages, the catalog format and the `agapp.mjs publish` tool. | [1227akash/antigem_mini_apps](https://github.com/1227akash/antigem-standalone_mini_apps) |
 This is not polished app they are only for showcase only not for use and will be removed in future.
 
 ---
@@ -496,7 +496,7 @@ AntiGem not the right fit? These apps do similar things and might suit you bette
 
 Issues, ideas and pull requests are welcome. **Translations** go to [AntiGem Languages](https://github.com/1227akash/antigem-standalone_languages): its README shows how to add or update a language, with or without git. For help, join the [Discord server](https://discord.gg/pJvvTDTc6G) or the [WhatsApp community](https://chat.whatsapp.com/IGQX8q9zSVV0RarG70sclV?s=cl&p=a&mlu=4&ilr=4).
 
-**Docs and guides:** the user guide lives on the [website](https://1227akash.github.io/antigem-standalone/docs/): how to install and set up AntiGem, every screen and setting, the agents, MCP, plugins, mini apps, how-to guides and troubleshooting. Its source is a separate repository, [santoshkurmi/antigem_website](https://github.com/1227akash/antigem-standalone_website). The docs are new and need improvement: if you figured something out, found a page that's wrong or unclear, or want to add a guide or screenshots, please contribute there (every docs page has an **Edit this page on GitHub** link).
+**Docs and guides:** the user guide lives on the [website](https://1227akash.github.io/antigem-standalone/docs/): how to install and set up AntiGem, every screen and setting, the agents, MCP, plugins, mini apps, how-to guides and troubleshooting. Its source is a separate repository, [1227akash/antigem_website](https://github.com/1227akash/antigem-standalone_website). The docs are new and need improvement: if you figured something out, found a page that's wrong or unclear, or want to add a guide or screenshots, please contribute there (every docs page has an **Edit this page on GitHub** link).
 
 ## Analytics
 
