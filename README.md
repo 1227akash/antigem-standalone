@@ -13,13 +13,7 @@
 [![License](https://img.shields.io/badge/License-GPLv3-blue?style=flat-square)](LICENSE)
 [![Releases](https://img.shields.io/github/v/release/1227akash/antigem-standalone?style=flat-square&label=Download)](https://github.com/1227akash/antigem-standalone/releases)
 
-[Download](https://github.com/1227akash/antigem-standalone/releases) · [Website](https://1227akash.github.io/antigem-standalone/) · [Docs & guides](https://1227akash.github.io/antigem-standalone/docs/) · [VS Code extension](https://github.com/1227akash/antigem-standalone_vscode_extension) · [Plugin SDK](extension_docs/README.md) · [User Guide](user_docs/README.md) · [Discord](https://discord.gg/pJvvTDTc6G) · [WhatsApp community](https://chat.whatsapp.com/IGQX8q9zSVV0RarG70sclV?s=cl&p=a&mlu=4&ilr=4)
-
-<br>
-
-[![Join the AntiGem Discord](https://img.shields.io/badge/Join%20the%20AntiGem%20Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/pJvvTDTc6G)
-
-**Get help, share what you build, request features and hear about new releases first.**
+[Download](https://github.com/1227akash/antigem-standalone/releases) · [Docs & guides](https://1227akash.github.io/antigem-standalone/docs/) · [VS Code extension](https://github.com/1227akash/antigem-standalone_vscode_extension) · [Plugin SDK](extension_docs/README.md) · [User Guide](user_docs/README.md)
 
 <br>
 
