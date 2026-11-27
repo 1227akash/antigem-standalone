@@ -11,9 +11,9 @@
 [![Kotlin](https://img.shields.io/badge/Kotlin-Jetpack%20Compose-7F52FF?style=flat-square&logo=kotlin&logoColor=white)](https://developer.android.com/jetpack/compose)
 [![Go](https://img.shields.io/badge/Bridge-Go-00ADD8?style=flat-square&logo=go&logoColor=white)](https://go.dev)
 [![License](https://img.shields.io/badge/License-GPLv3-blue?style=flat-square)](LICENSE)
-[![Releases](https://img.shields.io/github/v/release/santoshkurmi/antigem?style=flat-square&label=Download)](https://github.com/santoshkurmi/antigem/releases)
+[![Releases](https://img.shields.io/github/v/release/1227akash/antigem-standalone?style=flat-square&label=Download)](https://github.com/1227akash/antigem-standalone/releases)
 
-[Download](https://github.com/santoshkurmi/antigem/releases) · [Website](https://santoshkurmi.github.io/antigem/) · [Docs & guides](https://santoshkurmi.github.io/antigem/docs/) · [VS Code extension](https://github.com/Santoshkurmi/antigem_vscode_extension) · [Plugin SDK](extension_docs/README.md) · [User Guide](user_docs/README.md) · [Discord](https://discord.gg/pJvvTDTc6G) · [WhatsApp community](https://chat.whatsapp.com/IGQX8q9zSVV0RarG70sclV?s=cl&p=a&mlu=4&ilr=4)
+[Download](https://github.com/1227akash/antigem-standalone/releases) · [Website](https://1227akash.github.io/antigem-standalone/) · [Docs & guides](https://1227akash.github.io/antigem-standalone/docs/) · [VS Code extension](https://github.com/1227akash/antigem-standalone_vscode_extension) · [Plugin SDK](extension_docs/README.md) · [User Guide](user_docs/README.md) · [Discord](https://discord.gg/pJvvTDTc6G) · [WhatsApp community](https://chat.whatsapp.com/IGQX8q9zSVV0RarG70sclV?s=cl&p=a&mlu=4&ilr=4)
 
 <br>
 
@@ -35,11 +35,11 @@
 > - **You can use both.** The new app installs next to the old one; nothing in the old one is touched. Move over whenever you're ready.
 > - **To move your setup:**
 >   1. In the old app: **Settings → Backups & Restore → Back up environment** (tick *Include SSH keys and sign-ins* to keep your logins; never share that file). It is saved to `Download/Antigem/backups`.
->   2. Install **`AntiGem-v2.x.x.apk`** from [Releases](https://github.com/santoshkurmi/antigem/releases) (version 2.0.0 or newer; versions below 2.0.0 are the old app).
+>   2. Install **`AntiGem-v2.x.x.apk`** from [Releases](https://github.com/1227akash/antigem-standalone/releases) (version 2.0.0 or newer; versions below 2.0.0 are the old app).
 >   3. On the new app's setup screen, choose **From a ZIP file** and pick your backup. Every `com.termux` path is rewritten for `ai.antigem` while it restores.
 >   4. When everything works, uninstall the old app, and delete the backup if it contains your sign-ins.
 >
-> The new app is brand new: a few packages, the Linux desktop (X11) and some `termux-*` commands are still being tested. If something breaks, please [open an issue](https://github.com/santoshkurmi/antigem/issues).
+> The new app is brand new: a few packages, the Linux desktop (X11) and some `termux-*` commands are still being tested. If something breaks, please [open an issue](https://github.com/1227akash/antigem-standalone/issues).
 
 ---
 
@@ -233,7 +233,7 @@ On a rooted phone (Magisk, KernelSU or APatch), the agents and the terminal can 
 - Desktop and mobile modes, a steady browser identity that keeps Google sign-in working, and built-in Eruda DevTools.
 
 ### Connect to PC (with AntiGem for VS Code)
-Use the agents running on your PC from your phone. [AntiGem for VS Code](https://github.com/Santoshkurmi/antigem_vscode_extension) runs them on the PC, and the app becomes a second screen for the same chats.
+Use the agents running on your PC from your phone. [AntiGem for VS Code](https://github.com/1227akash/antigem-standalone_vscode_extension) runs them on the PC, and the app becomes a second screen for the same chats.
 - **Same chats on both:** start a chat in VS Code and continue it on the phone, or the other way round. Replies stream live on both, and every agent (Antigravity, Claude Code, Codex, OpenCode) works, with its subagents, images and files.
 - **Pair once, no typing of addresses:** in VS Code open **Settings → Connect phone → Start pairing**. On the phone, turn on **Settings → Connect to PC**, tap **Add a PC**, pick the PC from **Nearby PCs** and type the 6-digit code it shows. If the PC is not listed (guest Wi-Fi), type the address shown on the PC.
 - **Switch in one tap:** the PC button in the side bar lists your paired PCs; pick one, or go back to **Use this phone**. Several PCs can be paired.
@@ -247,7 +247,7 @@ Use the agents running on your PC from your phone. [AntiGem for VS Code](https:/
 - Agents can read and update them through the Notes MCP.
 
 ### App languages
-- Every text in the app can be translated. The app ships only English: other languages are made by the community and downloaded in **Settings → Language → Get more languages** from the [AntiGem Languages](https://github.com/Santoshkurmi/antigem_languages) repository.
+- Every text in the app can be translated. The app ships only English: other languages are made by the community and downloaded in **Settings → Language → Get more languages** from the [AntiGem Languages](https://github.com/1227akash/antigem-standalone_languages) repository.
 - Downloaded languages show who made them and get an **Update** button when their translation improves. They're read-only: duplicate one to change it, and updates never touch your copy.
 - Make your own language in the app, or let an agent translate the app through the Language MCP while you watch it change. Then send it to the community so everyone can use it.
 - Right-to-left languages, plural rules per language, and a setting for the language agents reply in.
@@ -262,7 +262,7 @@ Use the agents running on your PC from your phone. [AntiGem for VS Code](https:/
 
 ## Download
 
-Get the latest APK from [Releases](https://github.com/santoshkurmi/antigem/releases). There is one app, with the package name `ai.antigem`. It sets up its own Linux environment from the Termux packages, so it doesn't need the Termux app, and it can be installed next to it.
+Get the latest APK from [Releases](https://github.com/1227akash/antigem-standalone/releases). There is one app, with the package name `ai.antigem`. It sets up its own Linux environment from the Termux packages, so it doesn't need the Termux app, and it can be installed next to it.
 
 **Server mode** (a mode, not another build): the bridge, the agents (`agy`, Claude Code, OpenCode, Codex), your projects and the terminal run on **your own server (a VPS)**, and the phone is only the screen. Switch it on in **Settings → Where agents run**. See [Server mode](#server-mode-run-it-on-a-vps) below.
 
@@ -427,7 +427,7 @@ The Backups & Restore screen is for the phone's own data and is hidden in Server
 **Requirements:** JDK 17+, Android SDK (API 35, Build Tools 35+) and Go 1.23+ for the bridge.
 
 ```bash
-git clone https://github.com/santoshkurmi/antigem.git
+git clone https://github.com/1227akash/antigem-standalone.git
 cd antigem
 
 # Build the termux variant
@@ -468,11 +468,11 @@ AntiGem comes in parts that link to each other:
 
 | Project | What it is | Repository |
 |---|---|---|
-| **AntiGem** (Android app) | The coding agents, a Linux terminal, an editor and a browser on your phone. With **Connect to PC** it also uses the agents of a PC that runs AntiGem for VS Code. | [Santoshkurmi/antigem](https://github.com/Santoshkurmi/antigem) |
-| **AntiGem for VS Code** | The same agents and chat in a VS Code sidebar. Its **Connect phone** lets the app on your phone use them. | [Santoshkurmi/antigem_vscode_extension](https://github.com/Santoshkurmi/antigem_vscode_extension) · install: [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=santoshkurmi.antigem-vscode-extension), [Open VSX](https://open-vsx.org/extension/santoshkurmi/antigem-vscode-extension) |
-| **AntiGem Browser Bridge** (Chrome extension) | Lets agents in AntiGem for VS Code use your real Chrome. Not needed by the Android app, which has its own browser. | [Santoshkurmi/antigem-browser-extension](https://github.com/Santoshkurmi/antigem-browser-extension) · not in the Chrome Web Store yet: installed with *Load unpacked* from AntiGem for VS Code |
-| **AntiGem Languages** | The app's translations, made by the people who use it and downloaded from **Settings → Language → Get more languages** (the app ships only English). Also the step-by-step guide to adding or improving a language, the file format and the check every translation passes. | [Santoshkurmi/antigem_languages](https://github.com/Santoshkurmi/antigem_languages) |
-| **AntiGem mini apps** | The official mini apps (Habits, Pocket Notes, Sky, Gallery, Focus, Dev Toolbox, Explorer, Showcase), installed from **Mini Apps → Get apps**. Also the guide to building and publishing your own: real app sources using every SDK feature, signed `.agapp` packages, the catalog format and the `agapp.mjs publish` tool. | [Santoshkurmi/antigem_mini_apps](https://github.com/Santoshkurmi/antigem_mini_apps) |
+| **AntiGem** (Android app) | The coding agents, a Linux terminal, an editor and a browser on your phone. With **Connect to PC** it also uses the agents of a PC that runs AntiGem for VS Code. | [1227akash/antigem-standalone](https://github.com/1227akash/antigem-standalone) |
+| **AntiGem for VS Code** | The same agents and chat in a VS Code sidebar. Its **Connect phone** lets the app on your phone use them. | [Santoshkurmi/antigem_vscode_extension](https://github.com/1227akash/antigem-standalone_vscode_extension) · install: [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=santoshkurmi.antigem-vscode-extension), [Open VSX](https://open-vsx.org/extension/1227akash/antigem-standalone-vscode-extension) |
+| **AntiGem Browser Bridge** (Chrome extension) | Lets agents in AntiGem for VS Code use your real Chrome. Not needed by the Android app, which has its own browser. | [1227akash/antigem-standalone-browser-extension](https://github.com/1227akash/antigem-standalone-browser-extension) · not in the Chrome Web Store yet: installed with *Load unpacked* from AntiGem for VS Code |
+| **AntiGem Languages** | The app's translations, made by the people who use it and downloaded from **Settings → Language → Get more languages** (the app ships only English). Also the step-by-step guide to adding or improving a language, the file format and the check every translation passes. | [Santoshkurmi/antigem_languages](https://github.com/1227akash/antigem-standalone_languages) |
+| **AntiGem mini apps** | The official mini apps (Habits, Pocket Notes, Sky, Gallery, Focus, Dev Toolbox, Explorer, Showcase), installed from **Mini Apps → Get apps**. Also the guide to building and publishing your own: real app sources using every SDK feature, signed `.agapp` packages, the catalog format and the `agapp.mjs publish` tool. | [Santoshkurmi/antigem_mini_apps](https://github.com/1227akash/antigem-standalone_mini_apps) |
 This is not polished app they are only for showcase only not for use and will be removed in future.
 
 ---
@@ -494,9 +494,9 @@ AntiGem not the right fit? These apps do similar things and might suit you bette
 
 ## Contributing
 
-Issues, ideas and pull requests are welcome. **Translations** go to [AntiGem Languages](https://github.com/Santoshkurmi/antigem_languages): its README shows how to add or update a language, with or without git. For help, join the [Discord server](https://discord.gg/pJvvTDTc6G) or the [WhatsApp community](https://chat.whatsapp.com/IGQX8q9zSVV0RarG70sclV?s=cl&p=a&mlu=4&ilr=4).
+Issues, ideas and pull requests are welcome. **Translations** go to [AntiGem Languages](https://github.com/1227akash/antigem-standalone_languages): its README shows how to add or update a language, with or without git. For help, join the [Discord server](https://discord.gg/pJvvTDTc6G) or the [WhatsApp community](https://chat.whatsapp.com/IGQX8q9zSVV0RarG70sclV?s=cl&p=a&mlu=4&ilr=4).
 
-**Docs and guides:** the user guide lives on the [website](https://santoshkurmi.github.io/antigem/docs/): how to install and set up AntiGem, every screen and setting, the agents, MCP, plugins, mini apps, how-to guides and troubleshooting. Its source is a separate repository, [santoshkurmi/antigem_website](https://github.com/santoshkurmi/antigem_website). The docs are new and need improvement: if you figured something out, found a page that's wrong or unclear, or want to add a guide or screenshots, please contribute there (every docs page has an **Edit this page on GitHub** link).
+**Docs and guides:** the user guide lives on the [website](https://1227akash.github.io/antigem-standalone/docs/): how to install and set up AntiGem, every screen and setting, the agents, MCP, plugins, mini apps, how-to guides and troubleshooting. Its source is a separate repository, [santoshkurmi/antigem_website](https://github.com/1227akash/antigem-standalone_website). The docs are new and need improvement: if you figured something out, found a page that's wrong or unclear, or want to add a guide or screenshots, please contribute there (every docs page has an **Edit this page on GitHub** link).
 
 ## Analytics
 
@@ -512,4 +512,4 @@ AntiGem is free software, provided as is, without warranty, as described in the 
 
 ## License
 
-Copyright (C) 2026 Santosh Kurmi. Licensed under the [GNU General Public License v3.0](LICENSE) or any later version.
+Copyright (C) 2026 1227akash. Licensed under the [GNU General Public License v3.0](LICENSE) or any later version.

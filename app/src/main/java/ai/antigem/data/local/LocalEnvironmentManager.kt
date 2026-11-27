@@ -76,7 +76,7 @@ object LocalEnvironmentManager {
     private val IS_X86_64: Boolean = ai.antigem.BuildConfig.TARGET_ABI == "x86_64"
     const val HARDCODED_ROOTFS_TAG = "rootfs-v2"
     val HARDCODED_ROOTFS_ASSET: String = if (IS_X86_64) "bootrapz_x86_64_2026-11-20.zip" else "bootrapz_2026-11-19.zip"
-    val HARDCODED_ROOTFS_URL: String = "https://github.com/Santoshkurmi/antigem/releases/download/$HARDCODED_ROOTFS_TAG/$HARDCODED_ROOTFS_ASSET"
+    val HARDCODED_ROOTFS_URL: String = "https://github.com/1227akash/antigem-standalone/releases/download/$HARDCODED_ROOTFS_TAG/$HARDCODED_ROOTFS_ASSET"
     val HARDCODED_ROOTFS_SIZE_BYTES: Long = if (IS_X86_64) 419_473_812L else 400_054_861L
     /**
      * sha256 of [HARDCODED_ROOTFS_ASSET] (GitHub's digest of the release asset; the Hugging Face copy is the same file).
@@ -91,7 +91,7 @@ object LocalEnvironmentManager {
     val ROOTFS_MIRRORS: List<RootfsMirror> = if (IS_X86_64) listOf(RootfsMirror.GITHUB) else RootfsMirror.values().toList()
     const val HUGGINGFACE_ROOTFS_URL = "https://huggingface.co/datasets/santoshkurmi/rootfs-v2/resolve/main/bootrapz_2026-11-19.zip"
     // pages where the user can download the same zip by hand (then install it with "From a ZIP file")
-    const val GITHUB_ROOTFS_PAGE = "https://github.com/Santoshkurmi/antigem/releases/tag/rootfs-v2"
+    const val GITHUB_ROOTFS_PAGE = "https://github.com/1227akash/antigem-standalone/releases/tag/rootfs-v2"
     const val HUGGINGFACE_ROOTFS_PAGE = "https://huggingface.co/datasets/santoshkurmi/rootfs-v2/tree/main"
 
     // a mirror without this CPU's rootfs (Hugging Face on x86_64) falls back to GitHub

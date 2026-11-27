@@ -455,7 +455,7 @@ caches …), AntiGem's own files, logs, the apt lists and cache, AntiGem's sudo 
 creates the user again (with Ubuntu's usual home files) and runs `apt update` before installing packages.
 
 **To publish it as AntiGem's prebuilt Ubuntu:** upload both files to the GitHub release **`chroot-ubuntu-v1`** of
-`Santoshkurmi/antigem`. The setup page's **AntiGem Ubuntu (prebuilt)** source then turns on by itself and checks the
+`1227akash/antigem-standalone`. The setup page's **AntiGem Ubuntu (prebuilt)** source then turns on by itself and checks the
 download against the `.sha256`. Make the image from a fresh install with the packages you want in it, not from your
 daily one.
 
