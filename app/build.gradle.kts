@@ -170,6 +170,11 @@ android {
     // release (ai.antigem) 1236/1237/8767, debug (ai.antidev, see androidComponents below) 1238/1239/8768
     buildTypes {
         debug {
+            // Sign debug builds with release.jks if present so in-place update succeeds
+            val releaseJks = file("release.jks")
+            if (releaseJks.exists()) {
+                signingConfig = signingConfigs.getByName("release")
+            }
             buildConfigField("int", "BRIDGE_PORT", "1238")
             buildConfigField("int", "HUB_PORT", "1239")
             buildConfigField("int", "BROWSER_MCP_PORT", "8768")
