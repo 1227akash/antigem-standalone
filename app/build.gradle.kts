@@ -893,8 +893,7 @@ androidComponents {
         variant.sources.kotlin?.addGeneratedSourceDirectory(generateChangelog, GenerateChangelogTask::outputDir)
         variant.sources.kotlin?.addGeneratedSourceDirectory(generateStrings, GenerateStringsTask::outputDir)
 
-        // Keep package name as ai.antigem so it directly updates the main app with all user data intact
-        variant.applicationId.set("ai.antigem")
+        if (variant.buildType == "debug" && !isX86) variant.applicationId.set("ai.antidev")
 
         val amBuildType = if (variant.buildType == "release") "release" else "debug"
         val termuxAm = tasks.register<TermuxAmAssetTask>("termuxAm${variant.name.replaceFirstChar { it.uppercase() }}") {
